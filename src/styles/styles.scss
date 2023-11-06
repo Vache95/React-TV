@@ -1,0 +1,28 @@
+@import './normalize.scss';
+
+.wrapper {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+  }
+  
+  [class*="__container"] {
+    // border:1px solid black;
+    width: 100%;
+    max-width: 1319px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  
+  }
+  
+  .main {
+    padding-bottom: 20px;
+    flex: 1 1 100%;
+    position: relative;
+    background-color: #fefefe;
+  }
