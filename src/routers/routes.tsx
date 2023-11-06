@@ -1,5 +1,5 @@
 import AppLayout from 'layout';
-import { DetailsPage, HomePage, PeopleDetailsPage, PeoplePage, SearchPage, ShowDetailsPage, ShowPage } from 'pages';
+import { HomePage, PeopleDetailsPage, PeoplePage, SearchPage, ShowDetailsPage, ShowPage } from 'pages';
 import { Routes, Route } from 'react-router-dom';
 
 const AppRoutes: React.FC = () => {
@@ -10,7 +10,6 @@ const AppRoutes: React.FC = () => {
 				<Route path='show' element={<ShowPage />}>
 					<Route path=':id' element={<ShowDetailsPage />} />
 				</Route>
-				<Route path='details' element={<DetailsPage />} />
 				<Route path='search' element={<SearchPage />} />
 				<Route path='people' element={<PeoplePage />}>
 					<Route path=':id' element={<PeopleDetailsPage />} />
