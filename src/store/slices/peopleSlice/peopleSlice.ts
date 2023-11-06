@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-pattern */
 import { createSlice } from '@reduxjs/toolkit';
 import { peopleThunk } from './thunk';
 import { initialState } from './initialState';
