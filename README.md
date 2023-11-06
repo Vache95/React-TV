@@ -10,4 +10,4 @@ npm start
 ```
 ## Deploy Link
 
-TVMAZE` : <>
+TVMAZE` : <https://sensational-lebkuchen-5dbed1.netlify.app>
