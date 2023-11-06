@@ -1,19 +1,21 @@
+import { useNavigate } from 'react-router-dom';
 import { useAppSelector } from 'hooks/useSelector';
 import { selectSearch } from 'store/selector';
-import './search.scss';
-import Loading from 'layout/components/Loading';
+import Loading from 'components/Loading';
 import { useWait } from 'hooks/useWait';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import './search.scss';
 
 const SearchPage = () => {
 	const { searchData, loading } = useAppSelector(selectSearch);
 	const [loadings, setLoadings] = useState<boolean>(false);
 	const navigate = useNavigate();
+
 	useWait(() => setLoadings(loading), loading ? 0 : 1000);
 	const handleShow = (show: any) => {
 		navigate(`/show/${show?.id}`);
 	};
+
 	return (
 		<div className='search'>
 			<div className='search__container'>

@@ -1,6 +1,11 @@
-.home{
 
-}
 .home__container{
+    display: flex;
 
+   h1{
+    margin: 200px auto;
+    font-size: 100px;
+    color: #3c948b;
+    opacity: 0.3;
+   }
 }
